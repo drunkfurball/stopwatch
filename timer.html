@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Timer</title>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Timer, JavaScript">
+		<meta name="description" content="Timer app written in JavaScript">
+		<meta name="author" content="Murph Strange">
+		<link rel="icon" type="image/png" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<p id="clock">
+				00:00:00<span class="micro">.0</span>
+			</p>
+			<div class="btn" id="addMinute" onclick="addMinute()">
+				<span class="micro">+</span>
+			</div>
+			<div class="btn" id="subMinute" onclick="subMinute()">-</div>
+			<div class="btn" id="start" onclick="timer(this)">Start</div>
+			<div class="btn" id="reset" onclick="countReset()">Reset</div>
+		</div>
+	</body>
+</html>
